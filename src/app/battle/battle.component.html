@@ -1,0 +1,38 @@
+<ul>
+    <li class="hero-card">
+        <h2>{{this.heroService.player.hero.name}}</h2>
+        <hr class="divisor">
+        <div class="healthDiv">
+            Health:
+            <div class="healthBar">
+                <div [ngStyle]="{'width': (this.heroService.player.hero.health / this.heroService.player.hero.maxHealth) * 100 + '%'}"
+                    class="healthVal">
+                    {{this.heroService.player.hero.health}}/{{this.heroService.player.hero.maxHealth}}
+                </div>
+            </div>
+        </div>
+        <p>Damage: {{this.heroService.player.hero.damage}}</p>
+
+        <p>Wins: {{this.heroService.player.wins}} | Losses: {{this.heroService.player.losses}}</p>
+    </li>
+    <li class="hero-card">
+        <h2>{{this.heroService.enemy.name}}</h2>
+        <hr class="divisor">
+        <div class="healthDiv">
+            Health:
+            <div class="healthBar">
+                <div [ngStyle]="{'width': (this.heroService.enemy.health / this.heroService.enemy.maxHealth) * 100 + '%'}"
+                    class="healthVal">
+                    {{this.heroService.enemy.health}}/{{this.heroService.enemy.maxHealth}}
+                </div>
+            </div>
+        </div>
+        <p>Damage: {{this.heroService.enemy.damage}}</p>
+    </li>
+</ul>
+<button type="button" class="battleBttn" (click)="StartBattle($event)">Battle</button>
+
+<div *ngFor="let messagge of messagges">
+    {{messagge}}
+</div>
+<button type="button" (click)="this.messagges = [];">Clear Messages</button>

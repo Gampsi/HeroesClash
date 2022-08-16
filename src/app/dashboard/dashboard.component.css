@@ -1,0 +1,49 @@
+.hero-dashboard {
+    background-color: #5b5b5b;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    min-width: 16px;
+    max-width: 13em;
+    color: white;
+}
+
+.hero-dashboard h2 {
+    text-align: center;
+
+}
+
+.hero-dashboard .divisor {
+    border-top: 3px solid #bbb;
+    border-radius: 3px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+.hero-dashboard p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hero-dashboard .healthBar {
+    width: auto;
+    border: 2px solid whitesmoke;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+.hero-dashboard .healthVal {
+    width: 1%;
+    height: 20px;
+    background-color: rgb(29, 192, 29);
+    border-radius: 1px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+.hero-dashboard .healthDiv {
+    margin-top: 1rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}

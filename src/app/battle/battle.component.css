@@ -1,0 +1,84 @@
+.battle {
+    display: inline-block;
+}
+
+ul {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.battleBttn {
+    position: fixed;
+    margin-left: 45%;
+    margin-top: -10%;
+    background-color: #63899d;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    min-height: 50px;
+    max-width: 5rem;
+    box-sizing: border-box;
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.battleBttn:disabled {
+    background-color: #344d5b;
+}
+
+.hero-card {
+    background-color: #5b5b5b;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    min-width: 16px;
+    max-width: 13em;
+    color: white;
+}
+
+.hero-card h2 {
+    text-align: center;
+
+}
+
+.hero-card .divisor {
+    border-top: 3px solid #bbb;
+    border-radius: 3px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+.hero-card p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hero-card .healthBar {
+    width: auto;
+    border: 2px solid whitesmoke;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+.hero-card .healthVal {
+    width: 1%;
+    height: 20px;
+    background-color: rgb(29, 192, 29);
+    border-radius: 1px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+.hero-card .healthDiv {
+    margin-top: 1rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
